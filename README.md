@@ -1,15 +1,41 @@
-# neutralinojs-minimal
+# Baffometro — 2D Rock Band Game
 
-The default template for a Neutralinojs app. It's possible to use your favorite frontend framework by using [these steps](https://neutralino.js.org/docs/getting-started/using-frontend-libraries).
+## Description
 
-## Contributors
+**Baffometro** is a 2D game developed using HTML5 Canvas and JavaScript that tells the story of a rock band from the city of Piripiri, Piauí, Brazil.
 
-[![Contributors](https://contrib.rocks/image?repo=neutralinojs/neutralinojs-minimal)](https://github.com/neutralinojs/neutralinojs-minimal/graphs/contributors)
+The main characters are **Samuel**, **Arthur**, and **Paulo**, who face challenges and adventures as they strive for success in the local music scene.
 
-## License
+---
 
-[MIT](LICENSE)
+## Technologies Used
 
-## Icon credits
+- **HTML5 Canvas**  
+  Used to render the game's 2D graphics such as characters, backgrounds, and visual effects, providing a lightweight and responsive interface directly in the browser environment.
 
-- `trayIcon.png` - Made by [Freepik](https://www.freepik.com) and downloaded from [Flaticon](https://www.flaticon.com)
+- **JavaScript**  
+  Handles the game logic, character control, interactivity, animations, collision detection, and user input management.
+
+- **Neutralinojs**  
+  Utilized to package the web-based game into a desktop executable (.exe), allowing the game to run outside the browser with access to native functionalities and simplified distribution.
+
+---
+
+## How to Play
+
+- Run the `.exe` file located in the `dist` folder to start the game.  
+- There is no need to run Neutralino CLI or any other environment to play.
+
+---
+
+## Main Characters
+
+- **Samuel** – The charismatic vocalist  
+- **Arthur** – The talented guitarist  
+- **Paulo** – The energetic drummer  
+
+---
+
+## Contact
+
+For questions or contributions, please open an issue or submit a pull request.
