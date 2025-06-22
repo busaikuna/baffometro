@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    user-select: none !important;
+    z-index: 1;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -ms-user-drag: none;
+    user-select: none;
+    pointer-events: auto;
+    cursor: url('../sprites/cursor.cur'), auto !important;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+canvas{
+    border: #000 solid 3px;
+}

@@ -1,0 +1,88 @@
+div#stateDiv{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../sprites/background-states.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    padding-top: 30vh;
+}
+.blur{
+    z-index: -1;
+    background-color: #000000bd;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(2px);
+}
+.initial img{
+    position: absolute;
+    animation: titlePulsar 0.8s alternate infinite;
+}
+button{
+    z-index: 1;
+    margin-top: 35px;
+    width: 25vw;
+    height: 10vh;
+    color: #fff;
+    background-color: #000;
+    border: 3px solid #fff;
+    font-size: 1.5rem;
+    transition: all 0.7s;
+}
+
+button:hover{
+    background-color: #242424;
+    width: 28vw;
+    height: 12vh;
+}
+.initial p{
+    position: absolute;
+    z-index: 5;
+    color: #fff;
+    font-size: 2rem;
+    bottom: 0;
+    left: 0;
+    margin: 10px 15px;
+}
+
+.characters img{
+    top: 20vh;
+    left: 35vw;
+    position: absolute;
+    width: 30vw;
+}
+.characters{
+    padding: 0 !important;
+    flex-direction: row !important;
+    gap: 30vw;
+}
+.characters span{
+    z-index: 3;
+    font-size: 4rem;
+    transition: all 0.3s;
+}
+.characters span:hover{
+    font-size: 6rem;
+}
+
+#characterName{
+    top: 0;
+    margin-top: 5vh;
+    position: absolute;
+}
+
+#characterName:hover{
+    font-size: 4rem !important;
+}
+.characters button{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5vh;
+}

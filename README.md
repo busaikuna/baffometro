@@ -30,8 +30,8 @@ The main characters are **Samuel**, **Arthur**, and **Paulo**, who face challeng
 
 ## Main Characters
 
-- **Samuel** – The charismatic vocalist  
-- **Arthur** – The talented guitarist  
+- **Samuel** – The talented guitarist 
+- **Arthur** – The charismatic vocalist 
 - **Paulo** – The energetic drummer  
 
 ---

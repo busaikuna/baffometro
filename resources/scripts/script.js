@@ -10,16 +10,11 @@ let ground = new Ground()
 
 function gameLoop(){
     context.clearRect(0, 0, WIDTH, HEIGHT);
-    context.fillStyle = 'black';
+    context.fillStyle = 'white';
     context.fillRect(0, 0, WIDTH, HEIGHT);
     primaryCharacter.update()
     moviments()
     primaryCharacter.draw()
 
     requestAnimationFrame(gameLoop)
-}
-
-
-primaryCharacter.sprites.onload = () =>{
-    gameLoop()
 }

@@ -1,0 +1,10 @@
+@keyframes titlePulsar {
+    0%{
+        width: 60vw;
+        top: 25px;
+    }
+    100%{
+        width: 62.5vw;
+        top: 35px;
+    }
+}

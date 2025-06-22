@@ -1,3 +1,4 @@
+
 const keys = {
     ArrowLeft: false,
     ArrowRight: false,

@@ -1,7 +1,7 @@
 class Character {
     constructor(context) {
         this.sprites = new Image();
-        this.sprites.src = "sprites/Sprite-arth-Sheet.png";
+        this.sprites.src = "";
         this.width = 64;
         this.height = 64;
         this.x = 100;
