@@ -5,14 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BAFFOMETRO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/animations.css">
     <link rel="stylesheet" href="styles/states.css">
+    <script>
+        window.addEventListener('load', () => {
+            const menu = document.querySelector('#my-canvas');
+            const stateDiv = document.querySelector('#stateDiv');
+            menu.style.display = 'block';
+            stateDiv.style.display = "flex"
+        }
+        )
+    </script>
 </head>
+
 <body tabindex="0">
     <canvas id="my-canvas"></canvas>
     <div id="stateDiv">
     </div>
+    <script src="scripts/cutscenes.js"></script>
     <script src="scripts/objects.js"></script>
     <script src="scripts/actions.js"></script>
     <script src="scripts/keyboard.js"></script>

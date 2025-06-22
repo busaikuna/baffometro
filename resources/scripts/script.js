@@ -1,20 +1,32 @@
-let canvas = document.querySelector("#my-canvas")
+let canvas = document.querySelector("#my-canvas");
 let context = canvas.getContext('2d');
-const WIDTH = window.innerWidth
-const HEIGHT = window.innerHeight
-canvas.width = WIDTH
-canvas.height = HEIGHT
+const WIDTH = window.innerWidth;
+const HEIGHT = window.innerHeight;
+canvas.width = WIDTH;
+canvas.height = HEIGHT;
 
-let primaryCharacter = new Character(context)
-let ground = new Ground()
+const camera = { x: 0, y: 0 };
 
-function gameLoop(){
+let ground = new Ground(3000, HEIGHT);
+let primaryCharacter = new Character(context);
+
+function gameLoop() {
     context.clearRect(0, 0, WIDTH, HEIGHT);
-    context.fillStyle = 'white';
-    context.fillRect(0, 0, WIDTH, HEIGHT);
-    primaryCharacter.update()
-    moviments()
-    primaryCharacter.draw()
 
-    requestAnimationFrame(gameLoop)
+    if(currentCutscene){
+        playCutscene(context);
+        moviments();
+    } else {
+        context.fillStyle = 'skyblue';
+        context.fillRect(0, 0, WIDTH, HEIGHT);
+        ground.draw(context, camera);
+        moviments();
+        primaryCharacter.update(ground);
+        primaryCharacter.draw(camera);
+    }
+
+    requestAnimationFrame(gameLoop);
 }
+
+
+gameLoop();

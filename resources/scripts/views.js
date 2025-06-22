@@ -24,7 +24,7 @@ function setState(state) {
         case "game":
             stateDiv.innerHTML = "";
             stateDiv.style.display = "none"
-            gameLoop()
+            currentCutscene = 1
             break;
         case "settings":
             stateDiv.classList.toggle("initial")
@@ -46,7 +46,7 @@ function setState(state) {
                     <div class="blur"></div>
                 `;
                 document.querySelector("button").onclick = startGame;
-                document.querySelector("img").onload = changeCharacterActiivate()
+                document.querySelector("img").onload = changeCharacterActiivate();
             break;
     }
 }
